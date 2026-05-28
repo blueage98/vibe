@@ -1,0 +1,57 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# --- 시크릿 / 환경변수 ---
+# .env 와 모든 변형(.env.production, .env.local, .env.staging 등) 차단.
+# 다만 .env.example 같은 비어있는 템플릿은 추적해야 하므로 예외 처리.
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+*.sqlite
+*.sqlite3
+*.db
+receipt.db
+
+# --- Node / Vite ---
+node_modules/
+frontend/dist/
+frontend/.vite/
+*.local
+
+# --- Vercel ---
+.vercel/
+
+# --- IDE / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- 로그 ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# --- 작업 부산물 / 임시 ---
+.playwright-mcp/
+_tmp_*
+*.tmp
+
+# --- 루트 스크린샷 (samples/ 와 docs/ 의 이미지는 추적) ---
+/*.png
+/*.jpg
+/*.jpeg
+/*.gif
+
+# --- 개인 메모 ---
+강의노트.txt
+notes.md
+TODO.md
