@@ -41,6 +41,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # --- 작업 부산물 / 임시 ---
+.claude/
 .playwright-mcp/
 _tmp_*
 *.tmp
